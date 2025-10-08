@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="main.js"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+
+<body class="bg-gray-100 text-black">
+    <div id="loader"
+        class="fixed hidden  top-0 left-0 z-10 bg-black/75 flex w-full justify-center items-center h-screen text-white p-4">
+        <div>
+
+            <span class="loader"></span>
+        </div>
+    </div>
+    <div class=" flex justify-center items-center h-screen" id="login-form">
+        <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col">
+            <p class="text-lg">Welcome to the Centered Box!</p>
+            <form action="" id="login-form">
+                <label for="username" class="text-gray-700">username</label>
+                <input type="text" name="username" placeholder="Enter username" id="username"
+                    class="border border-gray-300 p-2 rounded mb-4 w-full">
+                <label for="password" class="text-gray-700">password</label>
+                <input type="password" name="password" placeholder="Enter password" id="password"
+                    class="border border-gray-300 p-2 rounded mb-4 w-full">
+
+                <button class="bg-blue-500 flex text-white px-4 py-2 rounded hover:bg-blue-600">Submit</button>
+
+            </form>
+
+        </div>
+
+    </div>
+    <div class="hidden flex justify-center relative bg-blue-500 py-4" id="posts">
+        <div class="absolute left-4 top-1/2 transform -translate-y-1/2">
+            <button id="logout-button" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Logout</button>
+
+        </div>
+        <h1 class="text-2xl font-bold">Posts</h1>
+    </div>
+    <div id="offline-post-warning" class="hidden p-2 bg-yellow-300 text-gray-700 rounded-md">
+        <p class="text-center text-gray-500">You are offline</p>
+    </div>
+
+    <div id="add-post-container" class="space-y-4">
+        <form action="" id="add-post-form" class="p-4">
+            <input type="text" name="title" placeholder="Post Title" id="post-title"
+                class="border border-gray-300 p-2 rounded mb-4 w-full">
+            <textarea name="content" id="post-content" rows="4" placeholder="Post Content"
+                class="border border-gray-300 p-2 rounded mb-4 w-full"></textarea>
+            <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Add Post</button>
+        </form>
+        <!-- Posts will be dynamically added here -->
+    </div>
+    <p class="text-center text-2xl">POSTS</p>
+    <div id="posts-container" class="p-4 space-y-4">
+        <!-- Posts will be dynamically added here -->
+        <!-- <p id="loading-posts ">Loading posts...</p> -->
+        <div class="bg-white p-4 rounded-lg shadow-md">
+            <h2 class="text-xl font-bold mb-2">Sample Post Title</h2>
+            <p class="text-gray-700">This is a sample post content. It provides a brief overview of the post.</p>
+
+            <div class="p-2 ">
+                <ul id="comments-list" class="list-disc list-inside">
+                    <li>fff</li>
+                </ul>
+                <form action="" id="add-comment-form" class="p-4 flex justify-between">
+                    <input type="text" name="comment" placeholder="Add a comment" id="comment-input"
+                        class="border border-gray-300 p-2 rounded  flex flex-grow">
+                    <button
+                        class="bg-blue-500 text-white flex self-center ms-2 p-3 h-full px-4 rounded hover:bg-blue-600">Add
+                        Comment</button>
+            </div>
+
+        </div>
+    </div>
+    <script>console.log("Page loaded");</script>
+</body>
+<script type="module" src="/main.js"></script>
+
+</html>

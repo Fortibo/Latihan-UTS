@@ -1,0 +1,157 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "JSON Server Tutorial",
+      "userId": "2",
+      "content": "This is a great tool for mocking APIs."
+    },
+    {
+      "id": "2",
+      "title": "Understanding REST APIs",
+      "userId": "3",
+      "content": "A guide to the principles of RESTful architecture."
+    },
+    {
+      "id": "9f76",
+      "title": "Simple PWA Tutorial",
+      "content": "Introduction to PWA",
+      "userId": "1"
+    },
+    {
+      "id": "34dc",
+      "title": "Just Another PWA Tutorial",
+      "content": "Part 2 of Simple PWA Tutorial",
+      "userId": "1"
+    },
+    {
+      "id": "e235",
+      "title": "qsq",
+      "content": "qsq",
+      "userId": "1"
+    },
+    {
+      "id": "7412",
+      "title": "sd",
+      "content": "w",
+      "userId": "1"
+    },
+    {
+      "id": "2eac",
+      "title": "dwd",
+      "content": "wdw",
+      "userId": "1"
+    },
+    {
+      "id": "ffc8",
+      "title": "wqwdwd",
+      "content": "wdw",
+      "userId": "1"
+    },
+    {
+      "id": "53f6",
+      "title": "dwd",
+      "content": "wdwd",
+      "userId": "1"
+    },
+    {
+      "id": "c6af",
+      "title": "asa",
+      "content": "sasa",
+      "userId": "1"
+    },
+    {
+      "id": "0c20",
+      "title": "dwd",
+      "content": "wdwdwd",
+      "userId": "1"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "body": "Excellent article!",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "body": "Very informative.",
+      "postId": "2"
+    },
+    {
+      "id": "3",
+      "body": "Thank you for your tutorial.",
+      "postId": "1"
+    },
+    {
+      "id": "f987",
+      "postId": "9f76",
+      "body": "Looking forward for next chapter"
+    },
+    {
+      "id": "f3cb",
+      "body": "dwdwdwd",
+      "postId": 7412
+    },
+    {
+      "id": "bca9",
+      "body": "komen",
+      "postId": 53
+    },
+    {
+      "id": "d121",
+      "body": "dwdwd",
+      "postId": 7412
+    },
+    {
+      "id": "4174",
+      "body": "qsqsqsqs",
+      "postId": 53
+    },
+    {
+      "id": "b35f",
+      "body": "qsqsqs",
+      "postId": "2eac"
+    },
+    {
+      "id": "1a5c",
+      "body": "herlo",
+      "postId": "53f6"
+    },
+    {
+      "id": "3646",
+      "body": "thankss",
+      "postId": "1"
+    },
+    {
+      "id": "29bb",
+      "body": "gg",
+      "postId": "9f76"
+    },
+    {
+      "id": "f538",
+      "body": "sqasasas",
+      "postId": "c6af"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Admin User",
+      "username": "admin",
+      "password": "admin"
+    },
+    {
+      "id": "2",
+      "name": "John Doe",
+      "username": "john",
+      "password": "passwordjohn"
+    },
+    {
+      "id": "3",
+      "name": "Jane Smith",
+      "username": "jane",
+      "password": "passwordjane"
+    }
+  ]
+}
