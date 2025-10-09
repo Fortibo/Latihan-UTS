@@ -4,6 +4,7 @@ const staticFiles = [
     "/index.html",
     "/style.css",
     "/main.js",
+    "/page2.html",
 ]
 
 self.addEventListener("install", (e) => {
