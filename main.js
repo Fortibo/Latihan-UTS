@@ -211,3 +211,27 @@ window.addEventListener("offline", () => {
     fetchPosts(); // refresh tampilan komentar sesuai status
 });
 document.addEventListener("DOMContentLoaded", togglePost);
+
+var request = new Request('camera_feed.html', {
+    method: 'get',
+    headers: new Headers({
+        'Content-Type': 'text/plain',
+    })
+});
+// Get camera feed
+fetch('camera_feed.html', {
+    method: 'get',
+    headers: new Headers({
+        'Content-Type': 'text/plain',
+    })
+})
+    .then((res) => {
+        return res.text();
+    }).then((html) => {
+        let cameraFeedElement = document.getElementById('camera_feed');
+        if (cameraFeedElement) {
+            cameraFeedElement.innerHTML = html
+        }
+    }).catch((reason) => {
+
+    });

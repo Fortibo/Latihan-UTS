@@ -41,6 +41,17 @@ self.addEventListener("fetch", (e) => {
     //         });
     //     });
     // }));
+    if (e.request.url.endsWith('/camera_feed.html')) {
+        e.respondWith(
+            fetch(e.request)
+                .then((res) => {
+                    if (res.ok) return res;
+                    // return new Response('Camera feed currently not available.')
+                    return caches.open(pwaCacheKey).then((cache) => cache.match('/camera_feed_unavailable.html'))
+                })
+        )
+        return;
+    }
     // 3. Network first then cache
     return e.respondWith(
         fetch(e.request).then((fetchRes) => {
