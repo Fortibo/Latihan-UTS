@@ -23,7 +23,8 @@ document.getElementById("login-form").addEventListener("submit", async (e) => {
     let username = document.getElementById("username").value
     let password = document.getElementById("password").value
     console.log(username, password)
-    let res = await fetch(apiUrl + "/users")
+    try {
+        let res = await fetch(apiUrl + "/users")
     let users = await res.json()
     if (!res.ok) {
         alert("Error fetching users / DB offline")
@@ -38,8 +39,14 @@ document.getElementById("login-form").addEventListener("submit", async (e) => {
         fetchPosts()
     } else {
 
-        alert("Invalid username or password hehe")
+        
     }
+    } catch (error) {
+        console.error("Error logging in:", error)
+        alert("Error logging in")
+        return
+    }
+    
  })
 
  document.getElementById("add-post-form").addEventListener("submit", async (e) => {
